@@ -1,0 +1,33 @@
+package dh;
+import java.util.*;
+
+
+
+public class Kth {
+//    void element(int[] x,int n) {
+//        int temp;
+//
+//
+//
+//    }
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        Kth obj=new Kth();
+        System.out.println("enter a number");
+        int num=sc.nextInt();
+        int n = sc.nextInt();
+        int[] x = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            x[i] = sc.nextInt();
+        }
+
+        Arrays.sort(x);
+        for (int i = 0; i < n; i++)
+        {
+            System.out.println(x[i]);
+        }
+            System.out.println(x[num-1]);
+    }
+}
